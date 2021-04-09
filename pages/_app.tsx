@@ -1,12 +1,17 @@
 import { AppProps } from 'next/app';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
+import { AuthUserContext } from '../lib/AuthUser.context';
+import { auth } from '../lib/firebase';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
+    const [user, loading, error] = useAuthState(auth);
+
     return (
-        <div className="mx-auto w-5/6 sm:w-2/3 md:w-3/5">
+        <AuthUserContext.Provider value={{ user, loading, error }}>
             <Component {...pageProps} />
-        </div>
+        </AuthUserContext.Provider>
     );
 }
 

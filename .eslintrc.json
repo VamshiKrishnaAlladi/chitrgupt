@@ -29,10 +29,13 @@
             "error",
             4
         ],
+        "no-console": "off",
         "object-curly-newline": [
             "error",
             {
-                "ObjectExpression": "always",
+                "ObjectExpression": {
+                    "minProperties": 5
+                },
                 "ObjectPattern": {
                     "multiline": true
                 },
