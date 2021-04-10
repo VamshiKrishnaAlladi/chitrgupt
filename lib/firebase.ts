@@ -3,12 +3,12 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyCAML8jgoP0zOAMFsV4aj7aLaCvBlwDVkI',
-    authDomain: 'xp-man.firebaseapp.com',
-    projectId: 'xp-man',
-    storageBucket: 'xp-man.appspot.com',
-    messagingSenderId: '385493406657',
-    appId: '1:385493406657:web:b42b2593916cbbd3b7d540',
+    apiKey: 'AIzaSyCwjGUNTk5T6qn3sy5DVfj5dV-AybjwdpM',
+    authDomain: 'chitrgupt.firebaseapp.com',
+    projectId: 'chitrgupt',
+    storageBucket: 'chitrgupt.appspot.com',
+    messagingSenderId: '539937749234',
+    appId: '1:539937749234:web:8524d71b753bf957cb386b',
 };
 
 if (!firebase.apps.length) {

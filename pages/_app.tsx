@@ -5,7 +5,7 @@ import { AuthUserContext } from '../lib/AuthUser.context';
 import { auth } from '../lib/firebase';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
     const [user, loading, error] = useAuthState(auth);
 
     return (
@@ -15,4 +15,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     );
 }
 
-export default MyApp;
+export default App;
